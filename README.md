@@ -1,6 +1,6 @@
 # Pinyindle
 
-This is a clone project of the popular word guessing game we all know and love.
+A Wordle clone using Pinyin (romanization system for Mandarin Chinese)
 
 [**Try out the demo!**]
 
