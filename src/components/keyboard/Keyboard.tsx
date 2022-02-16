@@ -39,7 +39,11 @@ export const Keyboard = ({
       } else {
         const key = e.key.toUpperCase()
         if (key.length === 1 && key >= 'A' && key <= 'Z') {
-          onChar(key)
+          if (key === 'V') {
+            onChar('Ü')
+          } else {
+            onChar(key)
+          }
         }
       }
     }
@@ -77,7 +81,7 @@ export const Keyboard = ({
         <Key width={65.4} value="ENTER" onClick={onClick}>
           {ENTER_TEXT}
         </Key>
-        {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
+        {['Z', 'X', 'C', 'Ü', 'B', 'N', 'M'].map((key) => (
           <Key
             value={key}
             key={key}
