@@ -257,6 +257,13 @@ function App() {
           onClick={() => setIsSettingsModalOpen(true)}
         />
       </div>
+      {(isGameWon || isGameLost) && (
+        <div className="flex justify-center pb-6">
+          <p className="text-center font-sans text-2xl font-medium text-indigo-600">
+            {solutionHanzi}
+          </p>
+        </div>
+      )}
       <Grid
         guesses={guesses}
         currentGuess={currentGuess}

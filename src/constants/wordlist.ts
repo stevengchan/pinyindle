@@ -1,7 +1,7 @@
 export const WORDS = [
-  'nüren'
+  'nüren',
 ]
 
 export const HANZI = [
-  'nǚrén - 女人'
+  'nǚrén 女人',
 ]
