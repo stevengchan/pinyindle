@@ -1,4 +1,4 @@
-import { WORDS } from '../constants/wordlist'
+import { WORDS, HANZI } from '../constants/wordlist'
 import { VALID_GUESSES } from '../constants/validGuesses'
 import { WRONG_SPOT_MESSAGE, NOT_CONTAINED_MESSAGE } from '../constants/strings'
 import { getGuessStatuses } from './statuses'
@@ -63,7 +63,8 @@ export const getWordOfDay = () => {
     solution: WORDS[index % WORDS.length].toUpperCase(),
     solutionIndex: index,
     tomorrow: nextday,
+    solutionHanzi: HANZI[index % HANZI.length]
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, solutionIndex, tomorrow, solutionHanzi } = getWordOfDay()

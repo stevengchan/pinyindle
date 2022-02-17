@@ -30,6 +30,7 @@ import {
   isWinningWord,
   solution,
   findFirstUnusedReveal,
+  solutionHanzi,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import {
