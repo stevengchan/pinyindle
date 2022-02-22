@@ -64,7 +64,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is {' '}
+        This is a {' '}
         <a
           href="https://www.powerlanguage.co.uk/wordle/"
           className="underline font-bold"
