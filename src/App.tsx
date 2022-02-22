@@ -81,7 +81,7 @@ function App() {
     if (loaded.guesses.length === MAX_CHALLENGES && !gameWasWon) {
       setIsGameLost(true)
       showErrorAlert(CORRECT_WORD_MESSAGE(solution), {
-        persist: true,
+        //persist: true,
       })
     }
     return loaded.guesses
@@ -231,7 +231,7 @@ function App() {
         setStats(addStatsForCompletedGame(stats, guesses.length + 1))
         setIsGameLost(true)
         showErrorAlert(CORRECT_WORD_MESSAGE(solution), {
-          persist: true,
+          //persist: true,
           delayMs: REVEAL_TIME_MS * MAX_WORD_LENGTH + 1,
         })
       }
